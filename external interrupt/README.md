@@ -1,1 +1,2 @@
+ I am using EINT1 as the interrupt pin. The pin P1.16 toggle continuously as it is inside the while loop.whenever an rising edge is detected on the EINT1 pin(P0.3) the ISR function is executed.In ISR function the pin P0.0 toggle its state each time the ISR function is executed.
 ![image Alt](https://github.com/sarangsuresh-creator/LPC2138/blob/fe10a718f2ecda6fbc055c904792a0ba3047db80/external%20interrupt/external%20interrupt.png)
