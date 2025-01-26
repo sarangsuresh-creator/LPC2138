@@ -1,1 +1,4 @@
 
+This code demonstrates the initialization and usage of UART0 in the LPC213x microcontroller for serial communication with interrupt handling. The UART0_Init function configures the UART0 peripheral, setting up the baud rate, enabling FIFOs, and configuring the UART0 interrupt in the VIC (Vector Interrupt Controller). The interrupt-driven approach is implemented to handle incoming data asynchronously, improving efficiency compared to polling. The interrupt handler, UART0_InterruptHandler, checks for the receive data available interrupt and reads incoming data from the UART0 receiver buffer register (U0RBR), storing it in the global variable received_char.
+here the trigger level is 1 so the RDR will set and clear on receiving single character.
+The main function continuously checks the received_char variable for any received data and echoes it back using the data function, which sends characters through TX
