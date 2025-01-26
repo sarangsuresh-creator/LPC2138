@@ -1,1 +1,1 @@
-
+LPC2138 has two uarts.UART0 and UART1,here i am using UART0.UART1 also has same configurations.The only difference between them is that UART1 has additional handshake signals called modem control signals like RTS,CTS,DSR,DTR which can guarantee a more secure communication.
